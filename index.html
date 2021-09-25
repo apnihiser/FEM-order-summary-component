@@ -19,27 +19,44 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="css/site.css" />
+
     <title>Frontend Mentor | Order summary card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
+  <!-- 
+    CHALLENGE TASK:
+    1) build out this order summary card component and get it looking as close to the design as possible.
+    2) See hover states for interactive elements
+   -->
   <body>
-    <main>
-      <article>
-        <h1>Order Summary</h1>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like! Annual Plan $59.99/year Change Proceed
-          to Payment Cancel Order
-        </p>
-
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Adam Nihiser</a>.
-        </div>
-      </article>
+    <main class="container flex">
+      <img
+        class="hero-img"
+        src="images/illustration-hero.svg"
+        alt="Hero art with man listening to music with headphones and phone"
+      />
+      <h1 class="heading-1">Order Summary</h1>
+      <p class="lead inner-container">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+      <div class="flex inner-container plan-summary">
+        <img src="/images/icon-music.svg" alt="Music note icon" />
+        <div class="plan"><strong>Annual Plan</strong><br />$59.99/year</div>
+        <a class="plan-link" href="#">Change</a>
+      </div>
+      <a class="btn payment" href="#">Proceed to Payment</a>
+      <a class="btn cancel" href="#">Cancel Order</a>
     </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/apnihiser">Adam Nihiser</a>.
+      </div>
+    </footer>
   </body>
 </html>
