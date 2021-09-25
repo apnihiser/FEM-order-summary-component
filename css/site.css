@@ -167,7 +167,9 @@ footer {
 @media (min-width: 23.5em) {
   body {
     background-image: url("/images/pattern-background-desktop.svg");
-    background-size: cover;
+    background-color: var(--paleBlue);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .container {
